@@ -3,10 +3,34 @@
     box-sizing: border-box;
 }
 body {
-    background-color: #f6f8fc;
+    background-color: #e6e8ec;
+    padding: 1rem;
 }
 header {
-    padding: 1rem;
+    position: relative;     /* necessário para o ::after se basear no header */
+    padding: 1rem;        /* altura fixa do cabeçalho */
+    overflow: hidden;   
+    background-color: #ffffff;    /* corta a parte que vazar da pokébola */
+    border-radius: 1rem 1rem 0 0;
+}
+header::after {
+    content: "";
+    position: absolute;
+    top: 50%;                      /* centraliza verticalmente */
+    right: -3rem;                  /* empurra um pouco para fora da tela */
+    transform: translateY(-50%);   /* centraliza verticalmente com precisão */
+    width: 12rem;                  /* largura da pokébola */
+    height: 12rem;                 /* altura da pokébola */
+    background-image: url('/Pokedex/assets/img/pokeball-bg.svg');
+    background-size: contain;
+    opacity: 0.05;                 /* deixa clarinho, só decorativo */
+    z-index: 0;                    /* fica atrás do conteúdo */
+    pointer-events: none;          /* não atrapalha cliques */
+}
+header .navbar,
+header h1 {
+    position: relative;
+    z-index: 1;
 }
 .navbar {
     display: flex;
@@ -18,20 +42,12 @@ header {
     max-width: 100%;
     height: 30px;
 }
-
-@media screen and (min-width:380px) {
-
-    
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-@media screen and (min-width:576px) {
-   
-    
-}
-@media screen and (min-width:768px) {
-   
-    
-}
-@media screen and (min-width:992px) {
-    
-    
+.logo img {
+    width: 15%;
+    min-width: 250px;
 }

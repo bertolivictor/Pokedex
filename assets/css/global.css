@@ -21,7 +21,7 @@ header::after {
     transform: translateY(-50%);   /* centraliza verticalmente com precisão */
     width: 12rem;                  /* largura da pokébola */
     height: 12rem;                 /* altura da pokébola */
-    background-image: url('/Pokedex/assets/img/pokeball-bg.svg');
+    background-image: url('/assets/img/pokeball-bg.svg');
     background-size: contain;
     opacity: 0.05;                 /* deixa clarinho, só decorativo */
     z-index: 0;                    /* fica atrás do conteúdo */

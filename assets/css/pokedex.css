@@ -4,6 +4,8 @@
     justify-content: center;
     background-color: #ffffff;
     padding: 1rem 0 0 0;
+    width: 100%;
+    max-width: 80rem;
     border-radius: 0 0 1rem 1rem;
 }
 .content-cards {

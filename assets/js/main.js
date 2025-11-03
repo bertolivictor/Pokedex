@@ -1,5 +1,5 @@
 let offset = 0;
-const limit = 12;
+const limit = 16;
 const maxRecords = 151
 
 const url = `https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=${limit}`;

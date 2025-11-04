@@ -13,7 +13,7 @@ header {
     position: relative;     /* necessário para o ::after se basear no header */
     padding: 1rem auto;
     width: 100%;
-    max-width: 80rem;        /* altura fixa do cabeçalho */
+    max-width: 60rem;        /* altura fixa do cabeçalho */
     overflow: hidden;   
     background-color: #ffffff;    /* corta a parte que vazar da pokébola */
     border-radius: 1rem 1rem 0 0;

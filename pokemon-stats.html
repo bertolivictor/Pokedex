@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- NORMALIZE CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" 
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- FONT ROBOTO -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/global.css">
+    <link rel="stylesheet" href="./assets/css/pokedex.css">
+    <link rel="stylesheet" href="./assets/css/pokemon-details.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./assets/img/pokedex-logo.png" alt="Pokedex logo">
+        </div>
+    </header>
+    <section class="main-container">
+        <div class="pokemon-title">
+            <h1>Bulbasaur</h1>
+            <h1>#1</h1>
+        </div>
+        <img id="pokemonImg" class="pokemon-image" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg" alt="Imagem do Pokémon">
+        <div class="content-container">
+            <div class="pokemon-types">
+                <span class="type type-grass">Grass</span>
+                <span class="type type-poison">Poison</span>
+            </div>
+            <div class="pokemon-info">
+                <div class="info-item">
+                    <h2>Height</h2>
+                    <div class="info-detail">
+                        <p>0.7 m</p>
+                        <img src="./assets/img/icons/height-icon.svg" alt="height icon">
+                    </div>
+                </div>
+                <div class="info-item">
+                    <h2>Weight</h2>
+                    <div class="info-detail">
+                        <p>6.9 kg</p>
+                        <img src="./assets/img/icons/weight-icon.svg" alt="weight icon">
+                    </div>
+                </div>
+                <div class="info-item">
+                    <h2>Abilities</h2>
+                    <ul class="abilities-list">
+                        <li>Overgrow</li>
+                        <li>Chlorophyll</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pokemon-stats">
+                <h2 class="grass-txt-lt">Base Stats</h2>
+                <div class="stats-container">
+                    <div class="stats-index">
+                        <span class="stat-item grass-txt">
+                            <p>HP</p>
+                            <p>ATK</p>
+                            <p>DEF</p>
+                            <p>SDEF</p>
+                            <p>SPD</p>
+                            <p>SATK</p>
+                        </span>
+                        <span class="stat-number grass-txt-lt">
+                            <p>45</p>
+                            <p>49</p>
+                            <p>49</p>
+                            <p>65</p>
+                            <p>65</p>
+                            <p>45</p>
+                        </span>
+                    </div>
+                    <span class="stat-bars">
+                        <div class="stats-bar-container grass-bg-lt">
+                            <div class="stats-bar grass" style="width: 45%;"></div>
+                        </div>
+                        <div class="stats-bar-container grass-bg-lt">
+                            <div class="stats-bar grass" style="width: 49%;"></div>
+                        </div>
+                        <div class="stats-bar-container grass-bg-lt">
+                            <div class="stats-bar grass" style="width: 49%;"></div>
+                        </div>
+                        <div class="stats-bar-container grass-bg-lt">
+                            <div class="stats-bar grass" style="width: 65%;"></div>
+                        </div>
+                        <div class="stats-bar-container grass-bg-lt">
+                            <div class="stats-bar grass" style="width: 65%;"></div>
+                        </div>
+                        <div class="stats-bar-container grass-bg-lt">
+                            <div class="stats-bar grass" style="width: 45%;"></div>
+                        </div>
+                    </span>
+            </div>
+        </div>      
+    </section>
+    
+    
+<!-- JS -->
+    <script src="./assets/js/pokemon-model.js"></script>
+    <script src="./assets/js/poke-api.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

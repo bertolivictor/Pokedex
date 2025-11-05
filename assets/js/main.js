@@ -11,7 +11,7 @@ const loadMoreButton = document.getElementById("load-btn")
 
 function convertPokemonToLi(pokemon) {
     return `
-        <a href="./pokemon-stats.html" class="details-link">
+        <a href="./pokemon-stats.html?id=${pokemon.order}" class="details-link">
             <li class="card ${pokemon.type}">
                 
                 <span class="number">#${pokemon.order}</span>

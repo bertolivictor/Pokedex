@@ -125,11 +125,11 @@
 .pokemon-stats {
     align-items: center;
     width: 100%;
-    padding: 1rem;
+    padding: 2rem;
 }
 .pokemon-stats h2 {
-    -webkit-text-stroke-width: 2.5px;
-    font-family: 'comic-sans', sans-serif;
+    -webkit-text-stroke-width: .5px;
+    font-family: 'Momo Trust Display', sans-serif;
     font-size: 2.5rem;
     text-align: center;
     margin: 0;
